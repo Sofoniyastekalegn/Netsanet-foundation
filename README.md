@@ -67,7 +67,7 @@ Located in the [`backend/`](backend/) directory.
 - `GET /api/health`  
   Health check endpoint.
 
-- **(Admin Only)**  
+- **(Admin Only)**
   - `GET /api/admin/users`  
     List and manage platform users.
   - `GET /api/admin/stories`  
@@ -87,6 +87,7 @@ Located in the [`backend/`](backend/) directory.
 ### Backend Setup & Running
 
 1. **Install dependencies:**
+
    ```sh
    cd backend
    python3 -m venv venv
@@ -96,12 +97,14 @@ Located in the [`backend/`](backend/) directory.
 
 2. **Set environment variables:**  
    Create a `.env` file with your Gemini API key and database URL:
+
    ```
    GEMINI_API_KEY=your_api_key_here
    DATABASE_URL=sqlite:///./netsanet.db
    ```
 
 3. **Run database migrations:**
+
    ```sh
    alembic upgrade head
    ```
@@ -131,6 +134,7 @@ Located in the [`frontend/`](frontend/) directory.
 ### Frontend Setup & Running
 
 1. **Install dependencies:**
+
    ```sh
    cd frontend
    npm install
